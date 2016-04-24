@@ -16,11 +16,6 @@ function init(){
 
     //myMap.controls.add('zoomControl', { top: 5, left: 5 });
 
-    // Добавим свой элемент в контейнер элементов управления карты
-//	$('<div><input type="button" value="Click!"/></div>')
-//    	.css({ position: 'absolute', left: '5px', top: '50px'})
-//    	.appendTo(map.panes.get('controls').getElement());
-
     // Геокоординаты области, которой мы хотим ограничить просмотр карты
 	var bounds = [[54.2, 61.1], [56, 61.7]];
 	// Запретим пользователю подыматься на уровни масштабирования меньше 11
@@ -61,7 +56,7 @@ function init(){
 	        '</address>'
         ].join('')
 	}, {
-		preset: 'islands#twirl#cafeIcon'
+		preset: 'islands#cafeIcon'
     });
     myMap.geoObjects.add(myPlacemark);
 
@@ -69,15 +64,13 @@ function init(){
 	myPlacemark.events.add('click',function (){
 		myMap.setCenter(myPlacemark.geometry.getCoordinates(),16);
 	});
-
+/*
     var myGeolocation;
-    //определение местоположения с помощью средств браузера
+    //определение местоположения
     ymaps.geolocation.get({
         provider: 'auto',
         mapStateAutoApply: true
     }).then(function (result) {
-        // Синим цветом пометим положение, полученное через браузер.
-        // Если браузер не поддерживает эту функциональность, метка не будет добавлена на карту.
         result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
         myGeolocation = result.geoObjects;
         myMap.geoObjects.add(result.geoObjects);
@@ -89,7 +82,7 @@ function init(){
         myMap.geoObjects.add(route);
     }, function (err) {
         throw err;
-    }, this);
+    }, this);*/
 
     myMap.geoObjects.add(myPlacemark);
 }
