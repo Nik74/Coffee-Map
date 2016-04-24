@@ -52,7 +52,6 @@ function init(){
 	        '<br/>',
 	        'Адрес: Челябинск, ул. Братьев кашириных, 16',
 	        '<br/>',
-	        'Подробнее: <a href="https://company.yandex.ru/">https://company.yandex.ru</a>',
 	        '</address>'
         ].join('')
 	}, {
