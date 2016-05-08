@@ -1,25 +1,121 @@
-html, body {
+html, body 
+{
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
 }
-#parametrs{
-    background-color: #ffffe6;
-    height: 100%;
-    width: 30%;
-    float: left;
+
+#search
+{
+	position: absolute;
+    z-index: 1;
+	margin-top:1%;
+	margin-left:1.5%;
+	width:25%;
+	height:11%;
+	opacity: 0.8;
+	border-radius: 20px;
+ 	background: #4b5049; /* Цвет фона */
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+#parametrs
+{
     position: absolute;
     z-index: 1;
-    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+	margin-top:7%;
+	margin-left:1.5%;
+	width:25%;
+	opacity: 0.9;
+	border-radius: 20px;
+ 	background: #ffffff; /* Цвет фона */
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
 }
-.menu{
+
+.menu
+{
     height: 80%;
     margin-left: -540px;
 }
-.menu:hover{
+
+.menu:hover
+{
     margin-left: 0;
 }
-fieldset{
+
+fieldset
+{
     border: 0px;
+}
+
+#param_search
+{
+	background:#f6f0d8;
+	padding: 5px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.param_search
+{
+	background:#f6f0d8;
+	padding: 5px;
+}
+
+#min_Price
+{
+	width:25%;	
+}
+
+#max_Price
+{
+	width:50%;	
+}
+
+.min
+{
+	margin-left:10%;	
+}
+
+.max
+{
+	margin-top:-6%;
+	margin-left:50%;	
+}
+
+.search
+{
+	margin-left:25%;
+	margin-top:-15%;
+}
+
+.img_logo
+{
+	width:20%;
+	margin-top:1%;
+}
+
+.form-search input 
+{
+  width:70%;
+  height: 32px;
+  line-height: 32px;
+  font: 13px Helvetica, Arial, sans-serif; 
+  color:#6E7074;
+  text-shadow: 0 1px 0 #FFF;
+  -moz-transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;  
+  padding: 0 30px 0 6px; 
+  background-image: url("http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s1600/search.png"), -moz-linear-gradient(#ffffff, #ffffff);
+  background-image: url("http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s1600/search.png"), -ms-linear-gradient(#ffffff, #ffffff);
+  background-image: url("http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s1600/search.png"), -o-linear-gradient(#ffffff, #ffffff);
+  background-image: url("http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s1600/search.png"), -webkit-linear-gradient(#ffffff, #ffffff); 
+  background-repeat: no-repeat; 
+  background-position: 100% 50%, 100% 100%;
+  border: 1px solid #747474;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 1px #575555, 0 1px 0 #FFF; 
 }

@@ -8,26 +8,62 @@
     <script src="../js/yandex_map.js" type="text/javascript"></script>
 </head>
 <body>
+	<div id="search">
+    	<form class="form-search" method="get" action="/search" target="_blank">
+            <img src="../img/logo.png" class="img_logo">
+        	<div class="search">
+            	<input type="text" name="q" placeholder="места и организации" value=""/>
+            </div>
+        </form>
+    </div>
 	<div id="parametrs" class="menu">
-		<fieldset>
-			<legend>Параметры поиска</legend>
-			<label>Цена</label>
-				<input type="number" id="min_Price"></input>
-				<input type="number" id="max_Price"></input>
+		<form>
+			<div id="param_search">
+            	<legend> Параметры поиска</legend>
+            </div>
+            <br>
+            <div class="param_search">
+				<label>Цена</label>
+					<div> 
+                    	<p></p>
+                    	<div class="min">
+                        	От <input type="number" id="min_Price"></input>
+                        </div>
+                    	<div class="max">
+							До <input type="number" id="max_Price"></input>
+                        </div>
+                    </div>
+            </div>
 			<br>
-			<label>Безналичный расчет</label>
-				<input type="radio" name="card_payment" value="card_payment_yes">Да</input>
-				<input type="radio" name="card_payment" value="card_payment_no">Нет</input>
+            <div class="param_search">
+				<label>Безналичный расчет</label>
+                	<div>
+                    	<p> </p>
+                    	<div class="min">
+							Да <input type="radio" name="card_payment" value="card_payment_yes"></input>
+                        </div>
+                        <div class="max">   
+                    		Нет <input type="radio" name="card_payment" value="card_payment_no"></input>
+                        </div>
+                    </div>
+            </div>
 			<br>
-
-			<label>Время работы</label>
-				<!-- возможно, придется поменять тип на text т.к. time не все браузеры поддерживают -->
-				<label>От </label><input type="time"></input>
-				<label>До </label><input type="time"></input>
-			<br>
-		</fieldset>
+			<div class="param_search">
+				<label>Время работы</label>
+                	<div>
+                    	<p> </p>
+                    	<div class="min">
+							<!-- возможно, придется поменять тип на text т.к. time не все браузеры поддерживают -->
+							От <input type="time" id="min_Price"></input>
+                        </div>
+                        <div class="max">
+							До <input type="time" id="max_Price"></input>
+                        </div>
+                    </div>
+            </div>
+		</form>
 	</div>
-    <div id="map" style="width: 100%; height: 100%; margin-left: 0%; z-index: 2;"></div>
+	<div id="map" style="width: 100%; height: 100%; margin-left: 0%; z-index: 2;">
+    </div>
 </body>
-
 </html>
